@@ -8,7 +8,7 @@
 
 # [<a href="">Demo</a>] [<a href="https://github.com/RSyehann/JavaScript-30">GitHub</a>] 
 
-<p>步驟</p>
+步驟
 
 ### Step 1.新增keydown Listener
 

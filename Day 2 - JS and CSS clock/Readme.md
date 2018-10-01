@@ -61,32 +61,3 @@
 
 > 參閱 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform?v=control"> MDN-transform</a>
 
-# 探索
-
-### 轉了個角度，調了點指針
-為了要讓指針從 12 點鐘方向 (0點)開始計算，
-作者將指針`hand`都加上了rotate(90deg)來轉，
-並在計算時間的 function 內最終結果也都 +90，
-我是改成到 clock-face 直接將整個區塊轉 90 度，
-這樣在計算時就不用 +90，可以用最大 360 來做計算了。
-
-另外也把時、分、秒針調整粗細度
-
-### transform:rotate 的彈跳問題
-
-作者最後有提到一個小問題，若指針在354度切到0度時，會使指針往前彈回去，這是因為有使用transition，在角度作切換時會加上的動畫效果，
-354 -> 0 度會認為是往前，而非轉一圈回到起點，所以動畫先往前轉到 0 。
-為了避免這個反彈的怪現象，我加上了一個 function 來處理角度
-
-```
-function setRotate(deg) {
-if (deg === 0) {
-  document.querySelector('.hand').style.transition = 'all 0s';
-} else {
-  document.querySelector('.hand').style.transition = 'all 0.05s';
-}
-return `rotate(${deg}deg)`;
-}
-```
-
-當計算角度為 0 時，把動畫效果關閉，這樣就可以避免了。

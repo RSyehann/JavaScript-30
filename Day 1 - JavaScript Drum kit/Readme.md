@@ -4,13 +4,13 @@
 
 <h1>01 - Drum kit</h1>
 
-#主題
+# 主題
 
 透過 JS 使鍵盤在按下按鍵時播放出對應按鍵的聲音，並同時產生一個特效，在按下其他鍵後會關閉該特效並於新按鍵中啟用
 
 > [<a href="">Demo</a>] [<a href="https://github.com/RSyehann/JavaScript-30">GitHub</a>]
 
-#步驟
+# 步驟
 
 ### Step 1.新增keydown Listener
 
@@ -92,13 +92,12 @@ datas.forEach(console.log);
 //data2 1 ["data1", "data2", "data3"]
 //data3 2 ["data1", "data2", "data3"]
 //回傳的分別是value, index, array本身內容。
-
+```
 > 參閱：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"> MDN-Array-prototype.forEach() </a>
 
 箭頭函式(Arrow Function)
 
-ES6的新語法
-
+# ES6的新語法
 ```
 //傳統寫法
 let func1 = function(arg) { console.log('Hi, ' +arg); };
@@ -111,7 +110,8 @@ let func3 = () => console.log('Hi');
 > 參閱:<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"> MDN-Arrow functions </a>
 
 ### addEventListener
-因為是第一次看到 `transtionend` 這個event，所以去 MDN 查了 HTML DOM event 紀錄連結在此
+
+因為是第一次看到 `transtionend` 這個event，所以去 MDN 查了 HTML DOM event 紀錄
 
 > 參閱:<a href="https://developer.mozilla.org/en-US/docs/Web/Events"> MDN-Event Reference </a>
 
@@ -131,15 +131,16 @@ let str = `<div data-key="${key}">
           </div>`;
 ```
 
-用```包住字串，利用`${}` 來包變數這樣可以很輕鬆的組出易於閱讀的組合字串！不用像ES5語法還要注意單雙引號與＋的配合。
+用包住字串，利用`${}` 來包變數這樣可以很輕鬆的組出易於閱讀的組合字串！不用像ES5語法還要注意單雙引號與＋的配合。
 
 參閱： <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"> Template literals</a>
 
-Array.from
+### Array.from
 
 範例中有這段
+```
 const keys = Array.from(document.querySelectorAll('.key'));
-
+```
 查詢了`Array.from`才知道這是一個將一個物件或是字串轉為陣列格式的語法，但當時覺得為何要把陣列再轉成陣列，querySelectorAll 不就是返回陣列嗎？
 再查下去才發現 querySelectorAll 返回的是 nodeList 且 nodeList 跟 Array 是不同的，雖然都很像陣列，但 nodeList 並沒有 array.prototype 上的方法ㄅ
 最簡單的例子是用 array.push() 去測試，會發現由 querySelectorAll 得到的物件無法用.push()。
@@ -156,10 +157,12 @@ Array.push('add');  // <-- 轉為陣列就可以了
 至於在範例中轉型的原因，
 我想應該是因為若無轉型為 Array 使用 nodeList 來 forEach 可能會導致某些瀏覽器版本錯誤。
 
-nodeList 由 querySelector 及 childNodes 返回的參閱： <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList"> MDN-NodeList </a>
+nodeList 由 querySelector 及 childNodes 返回的
+
+> 參閱： <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList"> MDN-NodeList </a>
 
 
-### CSS語法 ＆ 備註
+# CSS語法 ＆ 備註
 
 display: flex
 

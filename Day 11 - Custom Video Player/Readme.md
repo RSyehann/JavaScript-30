@@ -87,7 +87,7 @@ function skip(direction) {
 skipButtons.forEach(button => {
   button.addEventListener('click', skip);
 })
-
+```
 ### Step5. 進度條顯示
 
 使用 video 的`currentTime` 與 `duration` 計算出進度 % 數，
@@ -155,6 +155,7 @@ function fullScreen() {
    }
 }
 fullScreenBtn.addEventListener('click', fullScreen);
+```
 
 ### Step8. 鍵盤動作偵測
 

@@ -4,11 +4,13 @@
 
 <h1>01 - Drum kit</h1>
 
-<p>主題：透過 JS 使鍵盤在按下按鍵時播放出對應按鍵的聲音，並同時產生一個特效，在按下其他鍵後會關閉該特效並於新按鍵中啟用</p>
+#主題
 
-# [<a href="">Demo</a>] [<a href="https://github.com/RSyehann/JavaScript-30">GitHub</a>] 
+透過 JS 使鍵盤在按下按鍵時播放出對應按鍵的聲音，並同時產生一個特效，在按下其他鍵後會關閉該特效並於新按鍵中啟用
 
-步驟
+> [<a href="">Demo</a>] [<a href="https://github.com/RSyehann/JavaScript-30">GitHub</a>]
+
+#步驟
 
 ### Step 1.新增keydown Listener
 
@@ -38,15 +40,17 @@
 
 這個會回傳 element 的 class值（陣列）
 範例用到了 classList 的方法 add() 及 remove()
-
+```
 classList.add('aaa', 'bbb', 'ccc'); //新增多個className
 classList.remove('aaa', 'bbb', 'ccc'); //移除多個className
-
+```
 如果已經存在／不存在的 className 則會被忽略。
 
  還有其他法如：
+ ```
  toggle()偵測是否存在這個className，存在則刪除/不存在則新增
  contains() 偵測是否存在這個className, 返回true/false
+ ```
 參閱：<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">MDN-Element.classList</a>
 
 <h3> HTMLmediaElement(audio);</h3>

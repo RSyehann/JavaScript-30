@@ -172,26 +172,4 @@ CSS3 的排版語法，以範例中的來做備註紀錄
 
 > 參閱: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">MDN-flex </a>
 
-### 探索
 
-原範例只能由鍵盤觸發，我為這個範例加上可由滑鼠點擊觸發的功能
-```
-const keys = Array.from(document.querySelectorAll('.key'));
-
-// 新增 click 功能綁定至每個 class="key"
-keys.forEach(key => key.addEventListener('click', playSound));
-
-function playSound(e) {
-  //依據不同的事件來取得對應的key_code(e.type可以看，以下是簡寫版)
-  let keyCode = e.keyCode || this.getAttribute('data-key');
-  
-  const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
-  const key = document.querySelector(`div[data-key="${keyCode}"]`);
-  
-  if (!audio) return;
-  
-  key.classList.add('playing');
-  audio.currentTime = 0;
-  audio.play();
- }
- ```

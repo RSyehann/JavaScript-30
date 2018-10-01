@@ -1,10 +1,22 @@
+const keys = Array.from(document.querySelectorAll('.key'));
+
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+keys.forEach(key => key.addEventListener('click', playSound));
+window.addEventListener('keydown', playSound);
+
 function playSound(e) {
+    //依據不同的事件來取得對應的key_code(e.type可以看得到，以下是簡寫版)
+    let keyCode = e.keyCode || this.getAttribute('data-key');
+
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    if (!audio) return; // stop the function from running all together
-    audio.currentTime = 0; // rewind to the start
-    audio.play();
+    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+
+    if (!audio) return; // stop the function from running all 
+
     key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
 }
 
 function removeTransition(e) {
@@ -13,6 +25,7 @@ function removeTransition(e) {
     this.classList.remove('playing');
 }
 
-const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-window.addEventListener('keydown', playSound);
+
+
+
+

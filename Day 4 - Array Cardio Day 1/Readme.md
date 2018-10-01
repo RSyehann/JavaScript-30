@@ -143,7 +143,7 @@ const de = links
 
 ### 7. sort() & split()
 
-  題目：依據 lastName 排拒所有 people 的資料解答
+  題目：依據 lastName 排序所有 people 的資料解答
   
   ```
   const alpha = people.sort((lastOne, nextOne) => {

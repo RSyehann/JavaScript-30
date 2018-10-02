@@ -14,7 +14,7 @@
 這個練習需要使用到local Server，
 如果你已經有一個可在本機 run 起來的 server 可以直接使用，
 或在這層資料夾底下運行`npm install` 來安裝`browser-sync`，
-安裝完成後可以透過指令`npm start`來啟動 localserver (預設port3000)
+安裝完成後可以透過指令`npm start`來啟動 local Server (預設port3000)
 
 > npm指令需要下載 node.js 來使用
 

@@ -7,6 +7,10 @@
 介紹 JavaScript 中陣列與物件的引用(reference)及複製(Copying)。
 
 
+> 參閱: <a href="http://larry850806.github.io/2016/09/20/shallow-vs-deep-copy/"> 深拷貝與淺拷貝</a>
+> 參閱: <a href="https://pjchender.blogspot.com/2016/03/javascriptby-referenceby-value.html"> 談談 JavaScript 中 by reference 與 by value 的重要觀念</a>
+
+
 # 步驟
 
 ### Step1.原始型別

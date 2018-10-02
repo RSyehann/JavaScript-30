@@ -107,4 +107,4 @@ HTML 中的卡片會有 3D 移動的效果感很酷，這是 CSS 的 `rotateY` �
 .item:nth-child(odd) { transform: scaleX(1.31) rotateY(-40deg); }
 ```
 
-> 參閱 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY"> MDN - rotate </a>
+> 參閱 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY"> MDN - rotate() </a>

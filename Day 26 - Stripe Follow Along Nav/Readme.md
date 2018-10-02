@@ -35,7 +35,7 @@ function handleLeave() {
 // 為每個選單加上滑鼠移入 / 移出事件監聽
 triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
 tirggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
-
+```
 ### Step2. 撰寫移入事件
 
 編寫當滑鼠移入時被觸發的事件，備註如下

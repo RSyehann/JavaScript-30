@@ -1,8 +1,7 @@
-### This is a JavaScript practice with <a href="https://javascript30.com/">JavaScript30</a> by <a href="https://wesbos.com/">Wes Bos</a> without any frameworks, no compilers, no boilerplate, and no libraries.
-這是一個 JS30 挑戰的紀錄與心得分享，希望你會喜歡:)
 
 
-<h1>01 - Drum kit</h1>
+
+# 01 - Drum kit
 
 # 主題
 

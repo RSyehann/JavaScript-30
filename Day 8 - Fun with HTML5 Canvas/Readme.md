@@ -105,15 +105,21 @@ canvas.addEventListener('mouseout', () => isDrawing = false);
 ### 1.定義線條樣式
 
 (1) `strokeStyle`    線條顏色
+
 (2) `lineWidth`      線條寬度
+
 (3) `lineJoin`       線條的轉角樣式
+
 (4) `lineCap`        線條的結束樣式
 
 ### 2.移動順序
 
 (1)`beginPath()`     開啟一個新的繪製路徑
+
 (2)`moveTo()`        將繪製路徑的起點移動到指定的座標中
+
 (3)`lineTo()`        連接路徑終點到指定的座標中
+
 (4)`stroke()`        線條的結束樣式
 
 

@@ -18,9 +18,13 @@
 ### Step 2.建立 function playSound
   
   1.利用傳入的 e.keyCode 來取得對應的 audio 標籤及該按鍵的 div 標籤
+  
   2.判斷傳入的 e.keyCode 是否有對應的 audio 標籤，若無則退出
+  
   3.使對應的 div 加上 playing 樣式，產生對應的點擊特效
+  
   4.使對應的 audio播放時間為0
+  
   5.播放對應的音檔
 
 ### Step3. 新增transitioned listener
@@ -33,9 +37,9 @@
 1.判斷傳入的 propertyName 是否為 transform 若否則退出
 2.若為transform，則移除 playing 樣式
 
-<h2>JavaScript 語法 & 備註</h2>
+# JavaScript 語法 & 備註
 
-<h3>element.classList: </h3>
+### element.classList:
 
 這個會回傳 element 的 class值（陣列）
 範例用到了 classList 的方法 add() 及 remove()
@@ -52,7 +56,7 @@ classList.remove('aaa', 'bbb', 'ccc'); //移除多個className
  ```
 參閱：<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">MDN-Element.classList</a>
 
-<h3> HTMLmediaElement(audio);</h3>
+### HTMLmediaElement(audio);
 
 HTML的 `audio` 標籤，在 HTML 放置如下標籤指定音源
 
@@ -63,7 +67,7 @@ HTML的 `audio` 標籤，在 HTML 放置如下標籤指定音源
 `element.currentTime`指定播放秒數
 範例中使用 currentTime 是為了達到連發的效果
 
-<h3>forEach</h3>
+### forEach
 
 之前沒在 JavaScript 中使用的語法，用法如下：
 ```
@@ -94,9 +98,10 @@ datas.forEach(console.log);
 ```
 > 參閱：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"> MDN-Array-prototype.forEach() </a>
 
+# ES6的新語法
+
 箭頭函式(Arrow Function)
 
-# ES6的新語法
 ```
 //傳統寫法
 let func1 = function(arg) { console.log('Hi, ' +arg); };
@@ -177,5 +182,3 @@ CSS3 的排版語法，以範例中的來做備註紀錄
 }
 
 > 參閱: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">MDN-flex </a>
-
-
